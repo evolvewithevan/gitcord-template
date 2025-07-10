@@ -1,0 +1,10 @@
+# category.yaml - Defines a category and its included channels
+
+name: Voice Chats        # Display name of the category
+position: 0              # Position in the server sidebar (lower = higher)
+type: category               # 'text', 'voice', or 'category'
+
+
+channels:                # category types must contain a channel list of the channels within it
+  - vc1                # Channel filename without extension, channel display order is defined within each yaml individually, not here.
+  - vc2
