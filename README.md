@@ -16,7 +16,7 @@ To use you can either:
 
 ### Server Structure
 
-Each category is described with a `category.json` file, placed in `/servermap/`, which has a subdirectory - Within, each channel being `channelname.json`. The bot pulls from `/servermap/` to apply channel configuration upon a `/gitcord pull` command.
+Each category is described with a `category.yaml` file, placed in `/servermap/`, which has a subdirectory - Within, each channel being `channelname.yaml`. The bot pulls from `/servermap/` to apply channel configuration upon a `/gitcord pull` command.
 
 ### Contributing
 
