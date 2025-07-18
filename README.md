@@ -28,3 +28,7 @@ Each category is described with a `category.yaml` file, placed in `/servermap/`,
    
 Pull Requests are welcome and encouraged!
 If you have ideas to improve the template structure or want to contribute examples, feel free to open a PR or issue.
+
+## Project
+
+For development progress, see the [GitCord Project board](https://github.com/evolvewithevan/gitcord/projects/4).
