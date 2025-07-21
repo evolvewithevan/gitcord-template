@@ -1,0 +1,7 @@
+# vc1.yaml - Main vc channel
+
+name: vc1            # Name of the channel
+type: voice               # 'text', 'voice', or 'category'
+position: 0              # Order in sidebar, or category if within one (0 = top)
+topic: "The First VC"
+nsfw: false              # Set to true if you want Discord to label it NSFW
