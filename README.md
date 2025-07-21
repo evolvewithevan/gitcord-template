@@ -2,9 +2,6 @@
 
 A sister repo to **[GitCord](https://github.com/evolvewithevan/gitcord)**, a bot that allows for the management of discord server channel structure via Git.
 
-> [!WARNING]  
-> Repo is currently non-operational and serves for development purposes only
-
 ## Overview
 
 This repository serves as a starter template for configuring your Discord server’s channel and category structure through Git.
