@@ -1,0 +1,7 @@
+# off-topic.yaml - Casual conversations go here
+
+name: off-topic            # Name of the channel
+type: text                 # 'text', 'voice', or 'category
+position: 2                # Order in sidebar, or category if within one (0 = top)
+topic: "Talk about anything unrelated to the main server theme"
+nsfw: false              # Set to true if you want Discord to label it NSFW

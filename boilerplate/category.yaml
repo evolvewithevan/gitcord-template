@@ -1,0 +1,10 @@
+# category.yaml - Defines a category and its included channels
+
+name: Main Area          # Display name of the category
+position: 0              # Position in the server sidebar (lower = higher)
+type: category               # 'text', 'voice', or 'category'
+
+
+channels:
+  - moderator-only                # Channel filename without extension, channel display order is defined within each yaml individually, not here.
+  - rules
