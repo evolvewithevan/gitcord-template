@@ -1,6 +1,6 @@
 # category.yaml - Defines a category and its included channels
 
-name: Main Area          # Display name of the category
+name: Boilerplate          # Display name of the category
 position: 0              # Position in the server sidebar (lower = higher)
 type: category               # 'text', 'voice', or 'category'
 
