@@ -10,50 +10,40 @@ server:
 
 categories:
   - name: "Boilerplate"
-    position: 0
     type: "category"
     channels:
       - name: "moderator-only"
         type: "text"
-        position: 0
         topic: "Private channel for moderators only"
         nsfw: false
       - name: "rules"
         type: "text"
-        position: 1
         topic: "Server rules and guidelines"
         nsfw: false
 
   - name: "Main Area"
-    position: 1
     type: "category"
     channels:
       - name: "general"
         type: "text"
-        position: 0
         topic: "General chat for everyone"
         nsfw: false
       - name: "memes"
         type: "text"
-        position: 1
         topic: "Drop your memes here"
         nsfw: false
       - name: "off-topic"
         type: "text"
-        position: 2
         topic: "Talk about anything unrelated to the main server theme"
         nsfw: false
 
   - name: "Voice Chats"
-    position: 2
     type: "category"
     channels:
       - name: "vc1"
         type: "voice"
-        position: 0
         topic: "The First VC"
         nsfw: false
       - name: "vc2"
         type: "voice"
-        position: 1
         nsfw: true 
