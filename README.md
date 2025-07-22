@@ -1,31 +1,75 @@
-# GitCord Template
+# GitCord Template - Monolithic Format
 
-A sister repo to **[GitCord](https://github.com/evolvewithevan/gitcord)**, a bot that allows for the management of discord server channel structure via Git.
+This template has been updated to use the **new monolithic YAML format**. Instead of separate directories and individual YAML files for each channel and category, everything is now contained in a single `template.yaml` file.
 
-## Overview
+## New Template Structure
 
-This repository serves as a starter template for configuring your Discord server’s channel and category structure through Git.
-To use you can either:
-- **A)** Fork this repo and design your own server channel structure
-- **B)** Design your own server channel structure from scratch
+The template now uses a single `template.yaml` file with the following structure:
 
-## Development
+```yaml
+server:
+  name: "Your Server Name"
+  version: "2.0"
+  description: "Server description"
+  releaseNotes: "Release notes"
 
-### Server Structure
+categories:
+  - name: "Category Name"
+    position: 0
+    type: "category"
+    channels:
+      - name: "channel-name"
+        type: "text"  # or "voice"
+        position: 0
+        topic: "Channel topic"
+        nsfw: false
+```
 
-Each category is described with a `category.yaml` file, placed in `/servermap/`, which has a subdirectory - Within, each channel being `channelname.yaml`. The bot pulls from this repo to apply channel configuration upon a `/gitcord pull` command.
+## Usage
 
-### Contributing
+1. Clone this template repository to your server:
+   ```
+   !git clone https://github.com/evolvewithevan/gitcord-template
+   ```
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-   
-Pull Requests are welcome and encouraged!
-If you have ideas to improve the template structure or want to contribute examples, feel free to open a PR or issue.
+2. Apply the template:
+   ```
+   !git pull
+   ```
 
-## Project
+## Migration from Legacy Format
 
-For development progress, see the [GitCord Project board](https://github.com/evolvewithevan/gitcord/projects/4).
+If you were using the old directory-based format:
+- The new format is automatically detected and used
+- Legacy commands like `!createchannel` and `!createcategory` will show deprecation warnings
+- Use `!git pull` to apply the complete template instead
+
+## Benefits of Monolithic Format
+
+- **Simpler structure**: One file instead of multiple directories
+- **Easier editing**: All template configuration in one place
+- **Better version control**: Single file changes are easier to track
+- **Faster processing**: No need to walk directory structures
+
+## Compatibility
+
+- The system still supports legacy directory-based templates for backward compatibility
+- New installations should use the monolithic format
+- GitCord will automatically detect and use the appropriate format
+
+## Template Contents
+
+This template includes:
+
+### Boilerplate Category
+- **moderator-only**: Private channel for moderators
+- **rules**: Server rules and guidelines
+
+### Main Area Category  
+- **general**: Main chat channel
+- **memes**: Meme sharing channel
+- **off-topic**: Casual conversation channel
+
+### Voice Chats Category
+- **vc1**: Primary voice channel
+- **vc2**: Secondary voice channel (NSFW enabled)
